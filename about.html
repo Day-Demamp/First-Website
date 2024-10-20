@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Arch Linux</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>About Arch Linux</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Arch Linux is a lightweight and flexible Linux® distribution that tries to Keep It Simple.</p>
+        </section>
+        <section id="history">
+            <h2>History</h2>
+            <p>Arch Linux was founded by Judd Vinet in March 2002. It's known for its simplicity, modernity, pragmatism, user centrality, and versatility.</p>
+        </section>
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Rolling releases</li>
+                <li>A package management system called Pacman</li>
+                <li>Highly customizable</li>
+            </ul>
+            <button id="learn-more">Learn More</button>
+            <p id="more-info" style="display: none;">Arch Linux is designed to be simple, minimalist, and lightweight, adhering to the KISS principle. It's perfect for users who want to build their system from the ground up.</p>
+        </section>
+        <section id="community">
+            <h2>Community</h2>
+            <p>Arch Linux has a strong and active community which maintains comprehensive documentation and provides support via forums and IRC.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Arch Linux Community</p>
+    </footer>
+    <script>
+        document.getElementById('learn-more').addEventListener('click', function() {
+            var info = document.getElementById('more-info');
+            if (info.style.display === 'none') {
+                info.style.display = 'block';
+            } else {
+                info.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
