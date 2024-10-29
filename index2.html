@@ -6,14 +6,17 @@
     <title>My Basic Index Page</title>
     <style>
         body {
-            background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGhlcWt5ZnAzb3hpZGg2czd4YjdjMTVxeHE5bW1oaHRna2xicGV4cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/f0nB9I0NqfwHe/giphy.webp'); /* Replace with your GIF path */
-            background-size: cover; /* Adjusts the image to cover the entire background */
+            background-image: url('<iframe src="https://giphy.com/embed/f0nB9I0NqfwHe" width="320" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/misfits-black-and-white-f0nB9I0NqfwHe">via GIPHY</a></p>'); /* Make sure this path is correct */
+            background-size: cover; /* Ensures the image covers the entire background */
             background-position: center; /* Centers the background image */
             background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-color: lightblue; /* Fallback color if the GIF doesn't load */
+            height: 100vh; /* Ensures the body takes full height */
+            margin: 0; /* Resets default margin */
         }
         h1 {color:red; }
         h2 {color:green;}
-        .title-wrap {background-color: rgba(0, 120, 0, 0.5); text-align: center;} /* Added transparency for readability */
+        .title-wrap {background-color: rgba(0, 255, 255, 0.5); text-align: center;}
         .center {display: block; margin-left: auto; margin-right: auto;}
     </style>
     <link rel="stylesheet" href="styles.css">
