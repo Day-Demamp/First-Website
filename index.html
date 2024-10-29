@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Basic Index Page</title>
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
-        <style>
-            h1 {color:red; }
-            h2 {color:green}
-            .title-wrap {background-color: aqua; text-align: center;}
-            .center {display: block; margin-left: auto; margin-right: auto;}
-        </style>
+    <style>
+        body {
+            background-image: url('<iframe src="https://giphy.com/embed/f0nB9I0NqfwHe" width="320" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/misfits-black-and-white-f0nB9I0NqfwHe">via GIPHY</a></p>'); /* Make sure this path is correct */
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-position: center; /* Centers the background image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-color: lightblue; /* Fallback color if the GIF doesn't load */
+            height: 100vh; /* Ensures the body takes full height */
+            margin: 0; /* Resets default margin */
+        }
+        h1 {color:red; }
+        h2 {color:green;}
+        .title-wrap {background-color: rgba(0, 255, 255, 0.5); text-align: center;}
+        .center {display: block; margin-left: auto; margin-right: auto;}
+    </style>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,11 +27,11 @@
         <br />
     </div>
     <h2 style="text-align: center; font-style: italic;">hello my good friend!</h2>
-    <img src="https://m.media-amazon.com/images/M/MV5BNTY1MzgzOTYxNV5BMl5BanBnXkFtZTgwMDI4OTEwMjE@._V1_.jpg" width="33%" height="100%" class="center" >
+    <img src="https://m.media-amazon.com/images/M/MV5BNTY1MzgzOTYxNV5BMl5BanBnXkFtZTgwMDI4OTEwMjE@._V1_.jpg" width="33%" height="100%" class="center">
     <iframe width="756" height="426" src="https://www.youtube.com/embed/Xpx_KmGZ6TU" title="[YTP] LinusSexTips" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <footer>
         <p>2024 My Website</p>
-        <a href="about.html"> about</a>
+        <a href="about.html">about</a>
     </footer>
 </body>
 </html>
