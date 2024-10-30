@@ -4,40 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Basic Index Page</title>
-<style>
-    body {
-        background-image: url('https://media1.tenor.com/m/mJaPYYXxtd4AAAAC/misfits-punk.gif');
-        background-repeat: repeat;
-        background-attachment: fixed;
-        background-size: auto;
-        margin: 0;
-    }
-    h1 {
-    font-size: 50px;
-    color: rgba(255, 255, 255, 0.5); /* Semi-transparent text */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Optional: Adds contrast */
-}
-    h2 {color: green;}
-    .title-wrap {
-    background-color: rgb(0, 120, 0); /* Opaque green background */
-    text-align: center;
-    padding: 20px;
-}
+    <style>
+        body {
+            margin: 0;
+            color: white;
+            font-family: Arial, sans-serif;
+            perspective: 1px; /* Creates depth effect */
+        }
 
-    
+        .parallax {
+            position: relative;
+            height: 100vh; /* Full height section */
+            overflow: hidden; /* Hide overflow for the parallax effect */
+        }
 
-    .center {display: block; margin-left: auto; margin-right: auto;}
-</style>
+        .parallax::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://media1.tenor.com/m/mJaPYYXxtd4AAAAC/misfits-punk.gif');
+            background-size: cover;
+            background-attachment: fixed; /* Keeps it fixed */
+            transform: translateZ(-1px) scale(2); /* Move background back and scale */
+            z-index: -1; /* Place behind other content */
+        }
 
-    <link rel="stylesheet" href="styles.css">
+        .title-wrap {
+            background-color: rgba(0, 120, 0, 0.7); /* Semi-transparent green background */
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: rgba(255, 255, 255, 0.8); /* Semi-transparent text */
+        }
+
+        h2 {
+            color: green;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 33%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgba(0, 120, 0, 0.8);
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        a {
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <div class="title-wrap">
-        <h1 style="font-size: 50px;">Welcome to My Website</h1>
-        <br />
+    <div class="parallax">
+        <div class="title-wrap">
+            <h1>Welcome to My Website</h1>
+            <br />
+        </div>
     </div>
-    <h2 style="text-align: center; font-style: italic;">hello my good friend!</h2>
-    <img src="https://m.media-amazon.com/images/M/MV5BNTY1MzgzOTYxNV5BMl5BanBnXkFtZTgwMDI4OTEwMjE@._V1_.jpg" width="33%" height="100%" class="center">
+    <h2>hello my good friend!</h2>
+    <img src="https://m.media-amazon.com/images/M/MV5BNTY1MzgzOTYxNV5BMl5BanBnXkFtZTgwMDI4OTEwMjE@._V1_.jpg" class="center">
     <iframe width="756" height="426" src="https://www.youtube.com/embed/Xpx_KmGZ6TU" title="[YTP] LinusSexTips" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <footer>
         <p>2024 My Website</p>
@@ -45,3 +87,4 @@
     </footer>
 </body>
 </html>
+
